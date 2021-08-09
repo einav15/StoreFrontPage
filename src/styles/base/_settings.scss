@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500;1,600');
+
+$blue: #033f6d;
+$grey: #acacac;
+
+@keyframes growNback{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+@mixin mid-size {
+    @media (max-width: 1175px) {
+      @content;
+    }
+  }
+
+  @mixin smaller {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @mixin small {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
